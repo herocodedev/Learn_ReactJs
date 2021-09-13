@@ -3,19 +3,34 @@ class Cars extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            name:props.value,
-            brand:"Forxd",
-            color:"orange"
+            show:true
         }
     }
-    changeColor = () =>{
-        this.setState({color:"pink"})
+    delHeader = () => {
+        this.setState({show:false})
+    }
+    render(){
+        let header;
+        if(this.state.show)
+            header = <Child />
+        return (
+            <div>
+                {header}
+                <button onClick = {this.delHeader}>Delete Header</button>
+            </div>
+        )
+    }
+
+}
+
+class Child extends React.Component{
+    componentWillUnmount(){
+        alert("The component named Header is about to be unmounted.");
     }
     render(){
         return (
             <div>
-                <h2 style={{color:this.state.color}}>{this.state.name}-Thương hiệu: {this.state.brand}-Model: {this.props.bonus.model}</h2>
-                <button type="button" onClick={this.changeColor}>Change Color</button>
+                <h1>Đây là header</h1>
             </div>
         )
     }
