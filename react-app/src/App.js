@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import Car from './Car'
 
 function App() {
+  const carname = "Ford"
+  const maincar = {brand:"Ford",model:"New"}
   const html = (
   <div className="App">
     <header className="App-header">
@@ -16,6 +19,8 @@ function App() {
         rel="noopener noreferrer"
       >
         Learn ReactApp
+        <Car color="red" value="Đây là chiếc xe đỏ" brand={carname} bonus={maincar} />
+        <Car color="green" value="Đây là chiếc xe xanh" brand={carname} bonus={maincar}/>
       </a>
     </header>
   </div>
