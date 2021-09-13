@@ -7,7 +7,8 @@ class Cars extends React.Component{
         }
     }
     delHeader = () => {
-        this.setState({show:false})
+        console.log(this)
+        //this.setState({show:false})
     }
     render(){
         let header;
