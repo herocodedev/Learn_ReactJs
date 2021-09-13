@@ -7,8 +7,6 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <h1>ALoo</h1>
-    <h1>Haha</h1>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -19,9 +19,8 @@ function App() {
         rel="noopener noreferrer"
       >
         Learn ReactApp
-        <Car color="red" value="Đây là chiếc xe đỏooooo" brand={carname} bonus={maincar} />
-        <Car color="green" value="Đây là chiếc xe xanh" brand={carname} bonus={maincar}/>
       </a>
+      <Car color="pink" value="Đây là chiếc xe đỏooooo" brand={carname} bonus={maincar} />
     </header>
   </div>
 );
