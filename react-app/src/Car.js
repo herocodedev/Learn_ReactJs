@@ -38,12 +38,12 @@ class Cars extends React.Component{
       render() {
         return (
             <div>
-                <h1 onClick = {this.shoot1} style={{color:this.props.color,cursor:"pointer"}}>Chiếc xe 1</h1>
+                {/* <h1 onClick = {this.shoot1} style={{color:this.props.color,cursor:"pointer"}}>Chiếc xe 1</h1>
                 <h1 onClick = {this.shoot2} style={{color:this.props.color,cursor:"pointer"}}>Chiếc xe 2</h1>
                 <h1 onClick = {() => this.shoot3('Goal')} style={{color:this.props.color,cursor:"pointer"}}>Chiếc xe 3</h1>
                 <h1 onClick = {this.shoot4.bind(this,'Goal')} style={{color:this.props.color,cursor:"pointer"}}>Chiếc xe 4</h1>
                 <h1 onClick = {this.shoot5.bind(this,'Goal')} style={{color:this.props.color,cursor:"pointer"}}>Chiếc xe 5</h1>
-                <h1 onClick = {(ev) => this.shoot6('Goal',ev)} style={{color:this.props.color,cursor:"pointer"}}>Chiếc xe 6</h1>
+                <h1 onClick = {(ev) => this.shoot6('Goal',ev)} style={{color:this.props.color,cursor:"pointer"}}>Chiếc xe 6</h1> */}
                 {/* <h1 onClick = {this.shoot1} style={{color:this.props.color,cursor:"pointer"}}>Chiếc xe 3</h1> */}
             </div>
         );

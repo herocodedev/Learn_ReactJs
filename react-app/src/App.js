@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Car from './Car'
+import Myform from './Myform';
 
 function App() {
   const carname = "Ford"
@@ -21,6 +22,7 @@ function App() {
         Learn ReactApp
       </a>
       <Car color="pink" value="Đây là chiếc xe đỏooooo" brand={carname} bonus={maincar} />
+      <Myform />
     </header>
   </div>
 );
