@@ -36,8 +36,13 @@ class Cars extends React.Component{
 
     }
       render() {
+        const mystyle = {
+            color:"orange",
+            fontSize:"4rem",
+        }
         return (
             <div>
+                <h1 onClick = {this.shoot2} style={mystyle}>Chiếc xe 2</h1>
                 {/* <h1 onClick = {this.shoot1} style={{color:this.props.color,cursor:"pointer"}}>Chiếc xe 1</h1>
                 <h1 onClick = {this.shoot2} style={{color:this.props.color,cursor:"pointer"}}>Chiếc xe 2</h1>
                 <h1 onClick = {() => this.shoot3('Goal')} style={{color:this.props.color,cursor:"pointer"}}>Chiếc xe 3</h1>
